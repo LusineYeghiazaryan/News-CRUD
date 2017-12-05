@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>New Article</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="jumbotron text-center">
+		<h1>New Article</h1>
+	</div>
+	<div class="container">
+	<div class="btn-group btn-group-justified">
+		<a href="index.php" class="btn">Home</a>
+		<a href="view.php" class="btn">My Articles</a>
+		<a href="logout.php" class="btn">Logout</a>
+	</div>
+		
+		<h2>Add New Article</h2>	
+		<form name="registration" method="post" action="add.php">
+			<div class="form-group">
+				<label for="title">Title:</label>
+				<input type="text" class="form-control" name="title" required="required">
+			</div>		
+			<div class="form-group"> 
+				<label for="article">Article:</label>
+				<textarea class="form-control" rows="5" id="article" name="article" required="required"></textarea>
+			</div>
+			
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
+		
+	</body>
+</html>
+
+
